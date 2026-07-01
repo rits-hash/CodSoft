@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NexHire - Job Board</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    NexHire
+</div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#jobs">Jobs</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Find Your Dream Job Today</h1>
+
+<p>
+Discover opportunities from top companies
+around the world.
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search jobs...">
+
+<button onclick="searchJobs()">
+Search
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- JOBS -->
+
+<section id="jobs">
+
+<h2 class="section-title">
+Featured Jobs
+</h2>
+
+<div class="job-grid" id="jobContainer">
+
+<div class="job-card">
+
+<h3>Frontend Developer</h3>
+
+<p>Google</p>
+
+<span>Mumbai</span>
+
+<button onclick="applyJob('Frontend Developer')">
+Apply
+</button>
+
+</div>
+
+<div class="job-card">
+
+<h3>Data Analyst</h3>
+
+<p>Infosys</p>
+
+<span>Pune</span>
+
+<button onclick="applyJob('Data Analyst')">
+Apply
+</button>
+
+</div>
+
+<div class="job-card">
+
+<h3>Android Developer</h3>
+
+<p>TCS</p>
+
+<span>Bangalore</span>
+
+<button onclick="applyJob('Android Developer')">
+Apply
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EMPLOYER -->
+
+<section id="dashboard">
+
+<h2 class="section-title">
+Employer Dashboard
+</h2>
+
+<div class="dashboard">
+
+<input
+type="text"
+id="title"
+placeholder="Job Title">
+
+<input
+type="text"
+id="company"
+placeholder="Company Name">
+
+<input
+type="text"
+id="location"
+placeholder="Location">
+
+<button onclick="addJob()">
+Post Job
+</button>
+
+</div>
+
+</section>
+
+<!-- APPLICATIONS -->
+
+<section>
+
+<h2 class="section-title">
+Applied Jobs
+</h2>
+
+<ul id="applications"></ul>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="contact">
+
+<div class="contact-card">
+<i class="fas fa-envelope"></i>
+<p>support@nexhire.com</p>
+</div>
+
+<div class="contact-card">
+<i class="fas fa-phone"></i>
+<p>+91 9876543210</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 NexHire Job Board
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
